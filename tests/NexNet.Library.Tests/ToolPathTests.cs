@@ -43,6 +43,15 @@ public class ToolPathTests
             toolPath.AddPathLength(currentlyProcessedPathValue);
             // Assert
             toolPath.Value.Should().Be(PreviousToolPathValue + currentlyProcessedPathValue);
-        } 
+        }
+
+        [Fact]
+        void ChangeToolTest()
+        {
+            const double currentlyProcessedPathValue = 5000;
+            var distance = new ChangeTool(currentlyProcessedPathValue);
+            distance.yesNo.Should().Be(false);
+        }
+
     }
 }
