@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace NexNet.Library;
 
 public class Mill
@@ -28,6 +30,15 @@ public class ToolPath
     }
 }
 
+
+public class ChangeTool
+{
+    public bool yesNo;
+
+    public ChangeTool(double processedPath) => yesNo = processedPath > 5000 ? true : false;
+
+}
+
 public abstract class MeasurementBase
 {
     public double NominalValue { get; init; }
@@ -52,3 +63,4 @@ public class AxialMeasurement: MeasurementBase
     {
     }
 }
+

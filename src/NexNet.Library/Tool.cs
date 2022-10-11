@@ -10,6 +10,7 @@ public class Tool
     {
         get => _cost;
         //   podmínka ? pokudPravda : pokudNepravda;
+        //   is this condition true ? yes : no;
         set => _cost = value < 0 ? 0 : value;
     }
 }
