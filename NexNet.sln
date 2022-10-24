@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexNet.Library", "src\NexNe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexNet.Library.Tests", "tests\NexNet.Library.Tests\NexNet.Library.Tests.csproj", "{975E39BB-E945-48CE-A1E5-3AE3CC0BCD0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexNet.FileParserConsoleApp", "NexNet.FileParserConsoleApp\NexNet.FileParserConsoleApp.csproj", "{8584E1E2-B1F9-45D3-BEB1-1524A634EA7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{975E39BB-E945-48CE-A1E5-3AE3CC0BCD0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{975E39BB-E945-48CE-A1E5-3AE3CC0BCD0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{975E39BB-E945-48CE-A1E5-3AE3CC0BCD0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8584E1E2-B1F9-45D3-BEB1-1524A634EA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8584E1E2-B1F9-45D3-BEB1-1524A634EA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8584E1E2-B1F9-45D3-BEB1-1524A634EA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8584E1E2-B1F9-45D3-BEB1-1524A634EA7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
