@@ -1,0 +1,43 @@
+﻿<Window
+    x:Class="ParsingCsv.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ParsingCsv"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <Button
+            x:Name="btnOK"
+            Width="100px"
+            Height="40px"
+            Margin="675,367,25,27"
+            Click="btnOK_Click">
+            OK
+        </Button>
+        <ScrollViewer Margin="10,10,10,100"
+                      HorizontalScrollBarVisibility="Auto"
+                      >
+            <TextBlock
+                x:Name="LoggerTextBlock"
+                Width="auto"
+                Height="auto"
+                Margin="0,10,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Background="#FFE6E2E2"
+                TextWrapping="Wrap" />
+        </ScrollViewer>
+        <Button
+            Width="146"
+            Height="40"
+            Margin="498,367,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Button_Click"
+            Content="Get News" />
+    </Grid>
+</Window>
