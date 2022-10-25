@@ -8,12 +8,18 @@ public static class FileParserConsoleApp
 {
     private static void Main(string[] inputArguments)
     {
+        var customParser = new CustomCzechCsvParser();
         inputArguments.ForEach(path =>
         {
             Parser
                 .GetFilesFromDirectory(path)
                 .Where(f => f.IsCsv() && f.IsSingleFileAssembly())
-                .ForEach(Parser.PrintFileContent);
+                .ForEach(file =>
+                {
+                    Parser.PrintFileContent(file);
+                    var (valid, invalid) = customParser.ValidateAssemblyContent(file);
+                    valid.ForEach(validPart => Console.WriteLine($"{validPart.FilePath}"));
+                });
         });
         Console.ReadKey();
     }

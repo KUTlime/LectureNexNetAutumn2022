@@ -1,3 +1,8 @@
+using System.Globalization;
+using CsvHelper;
+using CsvHelper.Configuration;
+using NexNet.Library.Extensions;
+
 namespace NexNet.Library.Parsing.File;
 
 public class Parser
@@ -12,9 +17,10 @@ public class Parser
     public static void PrintFileContent(FileInfo fileInfo)
     {
         Console.WriteLine(fileInfo.FullName);
+        var content = string.Empty;
         try
         {
-            Console.WriteLine(System.IO.File.ReadAllText(fileInfo.FullName));
+            content = System.IO.File.ReadAllText(fileInfo.FullName);
         }
         catch (FileNotFoundException)
         {
@@ -28,5 +34,25 @@ public class Parser
         {
             Console.WriteLine($"Error on file {fileInfo.Name}. Error message: {e.Message}");
         }
+        Console.WriteLine(content);
+    }
+
+    public static (IEnumerable<Part> validParts, IEnumerable<Part> invalidParts) ValidateAssemblyContent(
+        FileInfo assemblyFile)
+    {
+        return (GetPartsFromFile(assemblyFile), Enumerable.Empty<Part>());
+    }
+
+    private static IEnumerable<Part> GetPartsFromFile(FileInfo assemblyFile)
+    {
+        var config = new CsvConfiguration(CultureInfo.InvariantCulture)
+        {
+            NewLine = Environment.NewLine,
+        };
+        using var reader = new StreamReader(assemblyFile.FullName);
+        using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+        var records = csv.GetRecords<Part>().ToList();
+        records.ForEach(r => Console.WriteLine($"Path: {r.FilePath}, material: {r.Material}"));
+        return records;
     }
 }
