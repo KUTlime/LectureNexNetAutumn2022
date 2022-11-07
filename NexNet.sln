@@ -1,6 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexNet.Library", "src\NexNet.Library\NexNet.Library.csproj", "{19FB00A3-508A-49DF-80A6-DCAB00FBEACE}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexNet.Library", "src\NexNet.Library\NexNet.Library.csproj", "{6D5987FB-652C-4C43-BE08-6E6994B9E9FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexNet.Library.Tests", "tests\NexNet.Library.Tests\NexNet.Library.Tests.csproj", "{975E39BB-E945-48CE-A1E5-3AE3CC0BCD0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexNet.FileParserConsoleApp", "NexNet.FileParserConsoleApp\NexNet.FileParserConsoleApp.csproj", "{8584E1E2-B1F9-45D3-BEB1-1524A634EA7E}"
+>>>>>>> 3e67d0305468e7bac3cb8380d5123cadf73c4ab6
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +16,24 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{19FB00A3-508A-49DF-80A6-DCAB00FBEACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19FB00A3-508A-49DF-80A6-DCAB00FBEACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19FB00A3-508A-49DF-80A6-DCAB00FBEACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19FB00A3-508A-49DF-80A6-DCAB00FBEACE}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{6D5987FB-652C-4C43-BE08-6E6994B9E9FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5987FB-652C-4C43-BE08-6E6994B9E9FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5987FB-652C-4C43-BE08-6E6994B9E9FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5987FB-652C-4C43-BE08-6E6994B9E9FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{975E39BB-E945-48CE-A1E5-3AE3CC0BCD0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975E39BB-E945-48CE-A1E5-3AE3CC0BCD0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975E39BB-E945-48CE-A1E5-3AE3CC0BCD0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975E39BB-E945-48CE-A1E5-3AE3CC0BCD0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8584E1E2-B1F9-45D3-BEB1-1524A634EA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8584E1E2-B1F9-45D3-BEB1-1524A634EA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8584E1E2-B1F9-45D3-BEB1-1524A634EA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8584E1E2-B1F9-45D3-BEB1-1524A634EA7E}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 3e67d0305468e7bac3cb8380d5123cadf73c4ab6
 	EndGlobalSection
 EndGlobal
